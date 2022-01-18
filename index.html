@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>BlackJack</title>
+</head>
+
+<body>
+
+    <header class="titulo">
+        <h1>BlackJack</h1>
+    </header>
+
+    <article class="row mt-2 g-0">
+        <div id="divButton" class="col text-center">
+            <button id="newGame" class="btn btn-danger">Nuevo Juego</button>
+            <button id="dropCard" class="btn btn-primary" disabled="true">Pedir carta</button>
+            <button id="stop" class="btn btn-warning" disabled="true">Detener</button>
+        </div>
+    </article>
+
+    <article class="row container">
+        <div class="col">
+            <h1>Jugador - <small>0</small></h1>
+            <div id="jugador-cartas" class="divCards">
+                <!-- <img class="carta" src="/assets/cartas/10C.png"> -->
+            </div>
+        </div>
+    </article>
+
+    <article class="row container mt-4">
+        <div class="col">
+            <h1>Computadora - <small>0</small></h1>
+            <div id="computadora-cartas" class="divCards">
+                <!-- <img class="carta" src="/assets/cartas/10C.png"> -->
+            </div>
+        </div>
+    </article>
+
+
+
+
+    <script src="/assets/js/underscore-min.js"></script>
+    <script src="/assets/js/juego-min.js"></script>
+
+    <script>
+        myModule.nuevoJuego();
+    </script>
+</body>
+
+</html>
